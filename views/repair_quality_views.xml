@@ -1,0 +1,15 @@
+<odoo>
+    <menuitem id="menu_repair_quality_root" name="Repair Quality" sequence="20"/>
+
+    <record id="action_repair_quality_checklist" model="ir.actions.act_window">
+        <field name="name">Checklist CQ</field>
+        <field name="res_model">repair.order</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_repair_quality_checklist" 
+              name="Checklist CQ" 
+              parent="menu_repair_quality_root" 
+              action="action_repair_quality_checklist" 
+              sequence="10"/>
+</odoo>
